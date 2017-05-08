@@ -104,6 +104,8 @@ function main() {
   var player_position_y = 3;
   var name1 = 0;
   var name2 = 1;
+  if(bookmarkList.length == 1)
+    name2 = 0;
   var index = 0;
   var quit = false;
   var collision = [[0, 0, 0, 0, 0, 0, 0, 0],
