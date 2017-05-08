@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Author: Joshua Thurston -->
+<html>
+  <head>
+    <title>Setup</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="traversal.js"></script>
+  </head>
+  <body background="background.jpg" lang="en-us">
+    <h1 style="font-size:48px; background-color:Orange; text-align: center;" > Setup Page </h1>
+    <div id="addBookmarkDiv">
+      <form>
+        <span class="setupText"><u>Add Bookmark</u></span><br />
+        <span class="setupText">URL:</span><br />
+        <input type="text" name="URL" id="url"/><br />
+        <span class="setupText">Name:</span><br />
+        <input type="text" name="Name" id="insert_name" />
+        <input type="button" value="Submit!" onclick="addBookmark()">
+      </form>
+    </div>
+    <div id="removeBookmarkDiv">
+      <form>
+        <span class="setupText"><u>Remove Bookmark</u></span><br />
+        <span class="setupText">Name:</span><br />
+        <input type="text" name="Name" id="remove_name"/>
+        <input type="button" value="Submit!" onclick="removeBookmark()">
+      </form>
+    </div>
+    <div id="bookmarkListDiv">
+      <form>
+        <span class="setupText"><u>Bookmark List</u></span><br />
+        <textarea rows="5" cols="50" id="setupBookmarksList"> N/a </textarea>
+        <input type="button" value="Submit!" onclick="bookmarkListAccept()"/>
+      </form>
+    </div>
+  </body>
+</html>
